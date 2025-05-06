@@ -1,0 +1,1 @@
+../llvm/bin/clang --target=riscv64-unknown-linux-gnu -march=rv64imafcvzne -nostdlib -nostartfiles -g -fuse-ld=lld -O2 -static --sysroot=../xuantie-gnu-toolchain/sysroot --gcc-toolchain=../xuantie-gnu-toolchain -T linker.ld start.S main.c -o mhz.elf
